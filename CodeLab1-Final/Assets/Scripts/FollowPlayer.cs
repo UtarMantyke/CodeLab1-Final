@@ -5,7 +5,7 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     public float speed = 1; //make a public speed variable
-    
+    private Animator _myAnimator;
     GameObject player; //declare a var for the player
     Rigidbody rb; //declare a var for the rigidbody
     
@@ -15,7 +15,7 @@ public class FollowPlayer : MonoBehaviour
         //player = GameObject.FindWithTag("Player");
         player = GameObject.Find("Player"); //find the player object
         rb = GetComponent<Rigidbody>(); //get this gameObjects rigidbody component
-        
+        _myAnimator = GetComponent<Animator>();
         Debug.Log("Found the gameObject: " + player.name); //print the name of the object found for player
     }
 
@@ -45,15 +45,17 @@ public class FollowPlayer : MonoBehaviour
         Debug.DrawRay(transform.position, direction * 5, Color.green); //use DrawRay to show the direction to the player
 
         //Can the enemy see the player?
-        if (dotProduct > 0.5f) //if the dot product is large enough (meaning the 2 vectors are close to the same direction)
+        if (dotProduct > 0) //if the dot product is large enough (meaning the 2 vectors are close to the same direction)
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, newQuatDir, Time.deltaTime); //rotate the enemy toward the player
 
             rb.velocity = transform.forward * speed; //move the enemy forward
+            _myAnimator.SetBool("SeePlayer", true);
         }
         else //if the enemy can't see the player
         {
             rb.velocity = Vector3.zero; //the enemy doesn't move
+            _myAnimator.SetBool("SeePlayer", false);
         }
     }
 }

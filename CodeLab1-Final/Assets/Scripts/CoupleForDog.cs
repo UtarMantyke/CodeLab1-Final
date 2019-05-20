@@ -6,6 +6,7 @@ public class CoupleForDog : MonoBehaviour
 {
     public AudioClip Woof;
     private AudioSource DogAudio;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class CoupleForDog : MonoBehaviour
         if (other.gameObject.CompareTag("Cat"))
         {
             GameManager.instance.HP--;
+            
             
             GameObject newAngry = Instantiate(Resources.Load<GameObject>("Prefabs/Angry"));
             newAngry.transform.position = gameObject.transform.position;
