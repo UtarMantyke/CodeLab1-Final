@@ -1,41 +1,110 @@
 fileFormatVersion: 2
 guid: 5132e9b220a041d46bd4e3c79edbe2cf
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: pCone1
-    100004: pCone2
-    100006: pCylinder1
-    100008: pSphere2
-    100010: cat
-    100012: joint1
-    400000: //RootNode
-    400002: pCone1
-    400004: pCone2
-    400006: pCylinder1
-    400008: pSphere2
-    400010: cat
-    400012: joint1
-    2100000: lambert1
-    2300000: pCone1
-    2300002: pCone2
-    2300004: pCylinder1
-    2300006: pSphere2
-    3300000: pCone1
-    3300002: pCone2
-    3300004: pCylinder1
-    3300006: pSphere2
-    4300000: pCylinder1
-    4300002: pCone2
-    4300004: pCone1
-    4300006: pSphere2
-    7400000: CatJump
-    9500000: //RootNode
-    13700000: pCone1
-    13700002: pCone2
-    13700004: pCylinder1
-    13700006: pSphere2
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: pCone1
+  - first:
+      1: 100004
+    second: pCone2
+  - first:
+      1: 100006
+    second: pCylinder1
+  - first:
+      1: 100008
+    second: pSphere2
+  - first:
+      1: 100010
+    second: cat
+  - first:
+      1: 100012
+    second: joint1
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: pCone1
+  - first:
+      4: 400004
+    second: pCone2
+  - first:
+      4: 400006
+    second: pCylinder1
+  - first:
+      4: 400008
+    second: pSphere2
+  - first:
+      4: 400010
+    second: cat
+  - first:
+      4: 400012
+    second: joint1
+  - first:
+      21: 2100000
+    second: lambert1
+  - first:
+      23: 2300000
+    second: pCone1
+  - first:
+      23: 2300002
+    second: pCone2
+  - first:
+      23: 2300004
+    second: pCylinder1
+  - first:
+      23: 2300006
+    second: pSphere2
+  - first:
+      33: 3300000
+    second: pCone1
+  - first:
+      33: 3300002
+    second: pCone2
+  - first:
+      33: 3300004
+    second: pCylinder1
+  - first:
+      33: 3300006
+    second: pSphere2
+  - first:
+      43: 4300000
+    second: pCylinder1
+  - first:
+      43: 4300002
+    second: pCone2
+  - first:
+      43: 4300004
+    second: pCone1
+  - first:
+      43: 4300006
+    second: pSphere2
+  - first:
+      74: 7400000
+    second: CatJump
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: pCone1
+  - first:
+      137: 13700002
+    second: pCone2
+  - first:
+      137: 13700004
+    second: pCylinder1
+  - first:
+      137: 13700006
+    second: pSphere2
+  - first:
+      74: 5982347250400238132
+    second: CatIdle
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -67,8 +136,38 @@ ModelImporter:
     - serializedVersion: 16
       name: CatJump
       takeName: Take 001
+      internalID: 7400000
       firstFrame: 1
       lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: CatIdle
+      takeName: Take 001
+      internalID: 5982347250400238132
+      firstFrame: 20
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -99,6 +198,7 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -106,18 +206,19 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -126,10 +227,11 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -139,6 +241,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

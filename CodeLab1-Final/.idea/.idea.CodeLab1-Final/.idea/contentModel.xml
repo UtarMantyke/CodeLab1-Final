@@ -159,7 +159,9 @@
           <e p="CoupleForDog.cs" t="Include" />
           <e p="FollowPlayer.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="HPManager.cs" t="Include" />
           <e p="PlayerControllerTest.cs" t="Include" />
+          <e p="ReloadScene.cs" t="Include" />
           <e p="Spawn.cs" t="Include" />
         </e>
       </e>

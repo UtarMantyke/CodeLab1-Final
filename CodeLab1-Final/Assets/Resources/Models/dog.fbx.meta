@@ -1,41 +1,110 @@
 fileFormatVersion: 2
 guid: 902ff36712abc1745ac8c7f14ad6f361
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: pCone4
-    100004: pCone5
-    100006: pSphere4
-    100008: pSphere5
-    100010: dog
-    100012: joint2
-    400000: //RootNode
-    400002: pCone4
-    400004: pCone5
-    400006: pSphere4
-    400008: pSphere5
-    400010: dog
-    400012: joint2
-    2100000: lambert1
-    2300000: pCone4
-    2300002: pCone5
-    2300004: pSphere4
-    2300006: pSphere5
-    3300000: pCone4
-    3300002: pCone5
-    3300004: pSphere4
-    3300006: pSphere5
-    4300000: pSphere5
-    4300002: pCone5
-    4300004: pCone4
-    4300006: pSphere4
-    7400000: DogJump
-    9500000: //RootNode
-    13700000: pCone4
-    13700002: pCone5
-    13700004: pSphere4
-    13700006: pSphere5
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: pCone4
+  - first:
+      1: 100004
+    second: pCone5
+  - first:
+      1: 100006
+    second: pSphere4
+  - first:
+      1: 100008
+    second: pSphere5
+  - first:
+      1: 100010
+    second: dog
+  - first:
+      1: 100012
+    second: joint2
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: pCone4
+  - first:
+      4: 400004
+    second: pCone5
+  - first:
+      4: 400006
+    second: pSphere4
+  - first:
+      4: 400008
+    second: pSphere5
+  - first:
+      4: 400010
+    second: dog
+  - first:
+      4: 400012
+    second: joint2
+  - first:
+      21: 2100000
+    second: lambert1
+  - first:
+      23: 2300000
+    second: pCone4
+  - first:
+      23: 2300002
+    second: pCone5
+  - first:
+      23: 2300004
+    second: pSphere4
+  - first:
+      23: 2300006
+    second: pSphere5
+  - first:
+      33: 3300000
+    second: pCone4
+  - first:
+      33: 3300002
+    second: pCone5
+  - first:
+      33: 3300004
+    second: pSphere4
+  - first:
+      33: 3300006
+    second: pSphere5
+  - first:
+      43: 4300000
+    second: pSphere5
+  - first:
+      43: 4300002
+    second: pCone5
+  - first:
+      43: 4300004
+    second: pCone4
+  - first:
+      43: 4300006
+    second: pSphere4
+  - first:
+      74: 7400000
+    second: DogJump
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: pCone4
+  - first:
+      137: 13700002
+    second: pCone5
+  - first:
+      137: 13700004
+    second: pSphere4
+  - first:
+      137: 13700006
+    second: pSphere5
+  - first:
+      74: 198650298730860885
+    second: DogIdle
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -67,6 +136,7 @@ ModelImporter:
     - serializedVersion: 16
       name: DogJump
       takeName: Take 001
+      internalID: 7400000
       firstFrame: 1
       lastFrame: 20
       wrapMode: 0
@@ -92,6 +162,35 @@ ModelImporter:
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: DogIdle
+      takeName: Take 001
+      internalID: 198650298730860885
+      firstFrame: 20
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -99,6 +198,7 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -106,18 +206,19 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -126,10 +227,11 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -139,6 +241,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
